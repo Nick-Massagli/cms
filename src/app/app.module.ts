@@ -28,12 +28,12 @@ import { MessageListComponent } from './messages/message-list/message-list.compo
     DocumentItemComponent,
     MessageItemComponent,
     MessageEditComponent,
-    MessageListComponent
+    MessageListComponent,
+    HeaderComponent,
+    ContactListComponent
   ],
   imports: [
     BrowserModule,
-    HeaderComponent,
-    ContactListComponent,
     CommonModule
   ],
   providers: [],

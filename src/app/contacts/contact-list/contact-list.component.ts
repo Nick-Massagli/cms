@@ -1,11 +1,9 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Contact } from '../contact.model';
 
 @Component({
   selector: 'app-contact-list',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
