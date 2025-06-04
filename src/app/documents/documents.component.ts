@@ -11,14 +11,8 @@ import { DocumentService } from './document.service';
 export class DocumentsComponent implements OnInit {
   selectedDocument: Document;
 
-  constructor(private documentService: DocumentService) { }
+  constructor() { }
 
   ngOnInit(): void {
-     this.documentService.documentChangedEvent
-      .subscribe(
-        (document: Document) => {
-          this.selectedDocument = document;
-        }
-      );
   }
 }
