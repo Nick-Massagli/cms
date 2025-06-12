@@ -21,7 +21,7 @@ export class DocumentService {
     return this.documents.slice();
   }
 
-  getDocument(id: string): Document | null {
+  getDocument(id: string): Document {
     for (const document of this.documents) {
       if (document.id === id) {
         return document;
@@ -63,7 +63,7 @@ export class DocumentService {
     }
 
     newDocument.id = originalDocument.id;
-    document[pos] = newDocument;
+    this.documents[pos] = newDocument;
     const documentListClone = this.documents.slice();
     this.documentListChangedEvent.next(documentListClone);
   }

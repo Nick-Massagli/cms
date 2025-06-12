@@ -9,7 +9,8 @@
                 <a class="pull-right btn btn-success" routerLink="new">New Contact</a>
             </div>
 </a>
-            <app-contact-item *ngFor="let contactItem of contacts" [contact]="contactItem"></app-contact-item>
+            <app-contact-item *ngFor="let contactItem of contacts" [contact]="contactItem" [dragEnabled]="true" [dragData]="contactItem" [dropZones]="['contactGroup']">
+            </app-contact-item>
         </div>
     </div>
 </div>
